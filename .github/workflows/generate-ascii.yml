@@ -15,4 +15,6 @@ jobs:
           run: ls -ltra
 
         - name: Execute script
-          run: ./ascii-script.sh
+          run: |
+            chmox +x ascii-script.sh
+            ./ascii-script.sh
